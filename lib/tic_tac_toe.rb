@@ -4,9 +4,10 @@ def play(board)
     return turn(board)
   end
   if winner(board) == true
-    "Congratulation #{winner(board)!}"
+    puts "Congratulation #{winner(board)!}"
   else
-    if draw?(board) == true
-      "Draw game!"
+    if draw?(board)
+      puts "Draw game!"
     end
   end
+end
